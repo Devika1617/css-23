@@ -1,0 +1,51 @@
+.container{
+
+    margin: 0;
+   width:400px;
+   height: 400px;
+   display: block;
+    border: 2px solid black;
+   position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgb(71, 69, 69);
+
+
+}
+button{
+    background-color: red;
+    color:white;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#heart{
+    display: block;
+    transition: 0.4s ease; 
+}
+.container>.TRANS:hover~#heart {
+  transform: translateX(40%);
+  transition: all 2s ease;
+}
+
+.container>.ROTATE:hover~#heart{
+    transform: rotate(360deg);
+    transition: all 2s ease;
+}
+.container>.SCALE:hover~#heart{
+    transform: scale(2);
+    transition: all 2s ease;
+}
+.container>.SKEW:hover~#heart{
+   transform: skew(60deg);
+   transition: all 2s ease;
+}
+
+img{
+    padding: 100px;
+    width: 150px;
+}
